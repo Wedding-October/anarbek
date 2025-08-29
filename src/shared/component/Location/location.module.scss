@@ -1,0 +1,117 @@
+.container {
+  text-align: center;
+  margin: 115px auto 0 auto;
+  border-radius: 10px;
+  width: fit-content;
+  width: 100%;
+  padding: 0 16px 200px 16px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 60px;
+  }
+}
+
+.flowers {
+  width: 582px;
+  height: 185px;
+
+  @media screen and (max-width: 768px) {
+    width: 230px;
+    height: 73px;
+  }
+}
+
+.imgRestaurant {
+  width: 100%;
+}
+
+.location {
+  margin: 16px 0;
+
+  
+  color: var(--white);
+  text-align: center;
+  font-family: "Felidae", sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 3.9px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1.56px;
+  }
+}
+
+.restaurant {
+  display: block;
+  margin: 32px 0 8px 0;
+  color: var(--yellow);
+  text-align: center;
+  font-family: "Felidae", sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: 3.9px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    letter-spacing: 1.68px;
+  }
+}
+
+.address {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  font-family: "Felidae", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 2.64px;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    letter-spacing: 1.08px;
+  }
+}
+.Loc{
+  color: red;
+}
+
+.mapTwoGis {
+  width: 100%;
+  height: 650px;
+  margin-top: 12px;
+
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 360px) {
+    height: 265px;
+  }
+}
+
+.animationTop {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animationAppearance {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  height: 50px;
+}
+
+.animationFinish {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  width: 100% !important;
+  height: 100% !important;
+}

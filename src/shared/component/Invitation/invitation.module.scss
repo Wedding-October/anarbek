@@ -1,0 +1,322 @@
+.container {
+  margin-top: 100px;
+  position: relative;
+  color: #000;
+  width: 100vw;
+  height: 850px;
+
+  &.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/src/assets/image/upl1424.png") center/contain no-repeat;
+    opacity: 0;
+    transform: scale(0);
+    animation: backgroundAppear 1.5s ease-out forwards;
+    pointer-events: none; ////////
+
+    @media screen and (max-width: 800px) {
+      background: url("/src/assets/image/upl1424.png") center/cover no-repeat;
+    }
+  }
+
+  .wrapperText {
+    margin: 15% auto 0 auto;
+    color: #000;
+
+    text-align: center;
+    width: 400px;
+    opacity: 100; ////
+    border-radius: 300px; /////////
+    min-height: 500px;
+    position: relative;
+
+    @media screen and (max-width: 800px) {
+      width: 300px;
+    }
+
+    @media screen and (max-width: 400px) {
+      margin: 40% auto 0 auto;
+      border-radius: 16px;
+    }
+  }
+
+  .wrapper {
+    background-color: #fff;
+    opacity: 0.95;
+    border-radius: 16px;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    font-size: 40pt;
+    font-family: "bickhamscriptone", sans-serif;
+  }
+
+  .subTitle {
+    font-size: 40pt;
+    font-family: "bickhamscriptone", sans-serif;
+  }
+
+  .invitation {
+    font-size: 17pt;
+    font-family: "Calme Extra", sans-serif;
+    margin-top: 25px;
+  }
+
+  .pleaseInvitation {
+    font-size: 14pt;
+    font-family: "Calme Extra", sans-serif;
+    margin-top: 10px;
+  }
+
+  .date {
+    font-size: 14pt;
+    font-family: "Numbers", sans-serif;
+  }
+
+  .wedding {
+    font-size: 15pt;
+    font-family: "AgoniaLyubviRegular", sans-serif;
+    margin-top: 70px;
+  }
+
+  .checkmark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+  }
+
+  .checkmark_stem {
+    position: absolute;
+    width: 3px;
+    height: 13px;
+    background-color: #fff;
+    left: 11px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    top: 6px;
+  }
+
+  .checkmark_kick {
+    position: absolute;
+    background-color: #fff;
+    left: 6.5px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 7px;
+    height: 3px;
+    top: 16px;
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17pt;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Calme Extra", sans-serif;
+    background-color: #5c4033;
+    margin-top: 10px;
+  }
+
+  .chat {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 10px;
+    @media screen and (max-width: 800px) {
+      align-items: start;
+    }
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .title,
+  .subTitle,
+  .invitation,
+  .pleaseInvitation,
+  .date,
+  .wedding,
+  .btn,
+  .confirmSection,
+  .chat {
+    opacity: 0;
+    transform: scale(1.5);
+    animation: textAppear 1.5s ease-out forwards;
+    animation-delay: 1.5s;
+  }
+
+  .chatBox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px 0 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 100%;
+
+    @media screen and (max-width: 800px) {
+      margin: 0;
+    }
+  }
+
+  .textarea {
+    width: 100%;
+    min-height: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fbfafa;
+  }
+
+  .sendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px 10px;
+    font-size: 13pt;
+    background-color: #48d1cc;
+    opacity: 1;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    color: #000;
+  }
+
+  .sendIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .giftSection {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .selectGift {
+    padding: 8px;
+    font-size: 14pt;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+  }
+
+  .label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+
+    input[type="checkbox"] {
+      appearance: none;
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      background-color: #fff;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:checked {
+        background-color: #007bff;
+        border: 1px solid #007bff;
+      }
+
+      &:checked::after {
+        content: "✔"; // Добавляем галочку
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .confirmSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+  }
+
+  .textareaConfirm {
+    margin-top: 10px;
+    width: 80%;
+    min-height: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+    width: 80%;
+    min-height: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+
+    &::placeholder {
+      font-family: "Numbers", sans-serif !important;
+    }
+  }
+}
+
+@keyframes backgroundAppear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
