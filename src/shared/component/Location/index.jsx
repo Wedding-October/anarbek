@@ -2,6 +2,7 @@ import MapWrapper from "./map";
 
 import styles from "./location.module.scss";
 import { color } from "framer-motion";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
 const Location = () => {
   return (
@@ -29,8 +30,22 @@ const Location = () => {
       />
 
       <div className={styles.mapTwoGis}>
-        <MapWrapper />
+        {/* <MapWrapper /> */}
+        <div style={{ width: "100%", height: "100vh" }}>
+      <YMaps>
+        <Map
+          defaultState={{ center: [ 42.872604,74.597629 ], zoom: 15 }}
+          width="100%"
+          height="100%"
+        >
+          <Placemark geometry={[42.872604,74.597629 ]} />
+          
+        </Map>
+      </YMaps>
+      
+    </div>
       </div>
+      
      
     </div>
     
