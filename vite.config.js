@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  bace: '/<https://github.com/strannosti/anarbek>/',
+  bace: '/<https://github.com/strannosti/anarbek.git>/',
 })
 
 // import { defineConfig } from 'vite';
