@@ -73,6 +73,9 @@
   letter-spacing: 2.64px;
   margin-bottom: 32px;
 
+  .text-h3:hover{
+    cursor: pointer;
+  }
   @media screen and (max-width: 768px) {
     font-size: 18px;
     letter-spacing: 1.08px;
