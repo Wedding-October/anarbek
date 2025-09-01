@@ -34,13 +34,15 @@ const Location = () => {
         <div style={{ width: "100%", height: "100vh" }}>
       <YMaps>
         <Map
-          defaultState={{ center: [42.8746, 74.5698], zoom: 12 }}
+          defaultState={{ center: [ 42.872604,74.597629 ], zoom: 15 }}
           width="100%"
           height="100%"
         >
-          <Placemark geometry={[42.8746, 74.5698]} />
+          <Placemark geometry={[42.872604,74.597629 ]} />
+          
         </Map>
       </YMaps>
+      
     </div>
       </div>
       
