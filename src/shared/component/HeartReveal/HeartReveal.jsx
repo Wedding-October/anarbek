@@ -13,7 +13,7 @@ const HEART_PATH =
 const HeartReveal = () => {
   const [clickCount, setClickCount] = useState(0);
   const [done, setDone] = useState(false);
-  const threshold = 10;
+  const threshold = 3;
   const progress = Math.round((clickCount / threshold) * 100);
 
   useEffect(() => {
