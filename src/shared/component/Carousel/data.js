@@ -1,7 +1,7 @@
-import img1 from "/anarbek/src/assets/image/wed1.jpg";
-import img2 from "/anarbek/src/assets/image/wed2.jpg";
-import img3 from "/anarbek/src/assets/image/wed3.jpg";
-import img4 from "/anarbek/src/assets/image/wed4.jpg";
+import img1 from "../../../assets/image/wed1.jpg";
+import img2 from "../../../assets/image/wed2.jpg";
+import img3 from "../../../assets/image/wed3.jpg";
+import img4 from "../../../assets/image/wed4.jpg";
 
 
 const cards = [
