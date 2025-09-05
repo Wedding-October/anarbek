@@ -32,14 +32,17 @@ const Location = () => {
 
       <div className={styles.mapTwoGis}>
         {/* <MapWrapper /> */}
-        <div style={{ width: "100%", height: "100vh" }}>
+        <div style={{ width: "100%", height: "100vh"  }}>
       <YMaps>
         <Map
           defaultState={{ center: [ 42.872604,74.597629 ], zoom: 15 }}
-          width="100%"
-          height="100%"
+         
+          width="90%"
+          height="90%"
+          
         >
-          <Placemark geometry={[42.872604,74.597629 ]} />
+          <Placemark geometry={[42.872604,74.597629 ]}
+           />
           
         </Map>
       </YMaps>

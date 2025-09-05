@@ -13,13 +13,13 @@ const HEART_PATH =
 const HeartReveal = () => {
   const [clickCount, setClickCount] = useState(0);
   const [done, setDone] = useState(false);
-  const threshold = 3;
+  const threshold = 10;
   const progress = Math.round((clickCount / threshold) * 100);
 
   useEffect(() => {
     if (!done) return;
 
-    const duration = 30 * 1000;
+    const duration = 7 * 1000;
     const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
 
@@ -77,6 +77,7 @@ const HeartReveal = () => {
                 transition={{ type: "spring", stiffness: 260, damping: 18 }}
               />
               <defs>
+                <mask>
                 <clipPath id="heartClip">
                   <motion.rect
                     x="0"
@@ -88,6 +89,7 @@ const HeartReveal = () => {
                     ry="0"
                   />
                 </clipPath>
+                </mask>
               </defs>
               <motion.path
                 d={HEART_PATH}
