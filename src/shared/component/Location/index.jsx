@@ -3,7 +3,7 @@ import MapWrapper from "./map";
 import styles from "./location.module.scss";
 import { color } from "framer-motion";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
-
+let i  = 0
 const Location = () => {
   return (
     <div id="location" className={styles.container}>
