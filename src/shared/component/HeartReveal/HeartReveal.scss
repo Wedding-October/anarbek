@@ -52,7 +52,6 @@
 
 .heart-base {
   fill: #d6d6d600;
-  // background-image: url(../../../assets/image/heart-removebg-preview.png);
   background-size: cover;
   transition: fill 0.30s ease, transform 0.38s ease;
 }
@@ -73,18 +72,7 @@
   }
 }
 
-// /* процент по центру */
-// .progress-text {
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-//   color: #fff;
-//   font-weight: 700;
-//   pointer-events: none;
-//   text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-//   user-select: none;
-// }
+
 
 .canvas-fireworks {
   position: absolute;

@@ -1,12 +1,9 @@
-import MapWrapper from "./map";
-
-
 import styles from "./location.module.scss";
 import { color } from "framer-motion";
 import { YMaps, Map, Placemark , ZoomControl} from "@pbe/react-yandex-maps";
 import { map } from "framer-motion/client";
 import location from "../../../assets/image/location.png"
-// import { ZoomControl } from 'react-leaflet';
+
 
 const Location = () => {
   return (
