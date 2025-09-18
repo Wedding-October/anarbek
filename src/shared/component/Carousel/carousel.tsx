@@ -4,6 +4,7 @@ import "./carousel.scss"
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import cards from "./data";
+import React from "react";
 
 
 const BootstrapCarousel = () => (
