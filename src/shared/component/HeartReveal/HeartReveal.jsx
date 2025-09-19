@@ -137,7 +137,7 @@ const HeartReveal = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Покликайте по сердцу
+            <p >Покликайте по сердцу</p>
           </motion.div>
         )}
       </AnimatePresence>

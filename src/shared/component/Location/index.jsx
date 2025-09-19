@@ -12,7 +12,7 @@ const Location = () => {
       <a  style={{textDecoration: "none"}}href="https://2gis.kg/bishkek/inside/15763234351097281/firm/70000001047984986?m=74.597365%2C42.87277%2F17.86">
           <h3 
            className="text-h3"
-            style={{fontFamily: "AgoniaLyubviRegular", color: "black"}} 
+            style={{fontFamily: "Extrano", color: "black"}} 
             >Адресс проведения торжества: ул.Токтогула 125/1
              </h3></a>
       <a href="https://2gis.kg/bishkek/inside/15763234351097281/firm/70000001047984986?m=74.597365%2C42.87277%2F17.86" target="_blank" rel="noopener noreferrer">
