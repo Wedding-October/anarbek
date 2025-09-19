@@ -66,7 +66,7 @@ const Invitation = () => {
             Пожалуйста подтвердите свое <br /> присутствие до&nbsp;
             <span className={s.date}>28.09.2025</span>
           </div>
-          <div className={s.wedding}>Ждем Вас на свадьбе!</div>
+          <div className={s.wedding}>Ждем Вас на нашей свадьбе!</div>
 
           <div className={s.confirmSection}>
             <textarea
