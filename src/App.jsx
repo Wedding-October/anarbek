@@ -5,7 +5,7 @@ import Location from "./shared/component/Location";
 import Timer from "./shared/component/Timer";
 import HeartReveal from "./shared/component/HeartReveal/HeartReveal";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BootstrapCarousel from "./shared/component/Carousel/carousel";
+
 
 
 function App() {
@@ -16,7 +16,10 @@ function App() {
         <Timer />
       </div>
       <HeartReveal/>
+ 
       <Invitation />
+  
+      
       <Location />
     </div>
   );

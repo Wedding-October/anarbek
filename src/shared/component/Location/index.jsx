@@ -15,7 +15,7 @@ const Location = () => {
             style={{fontFamily: "Extrano", color: "black"}} 
             >Адресс проведения торжества: ул.Токтогула 125/1
              </h3></a>
-      <a href="https://2gis.kg/bishkek/inside/15763234351097281/firm/70000001047984986?m=74.597365%2C42.87277%2F17.86" target="_blank" rel="noopener noreferrer">
+      {/* <a href="https://2gis.kg/bishkek/inside/15763234351097281/firm/70000001047984986?m=74.597365%2C42.87277%2F17.86" target="_blank" rel="noopener noreferrer">
       <img 
         src={location}
         alt="" 
@@ -35,13 +35,13 @@ const Location = () => {
       <div className={styles.mapTwoGis}>
       
         {/* <MapWrapper /> */}
-        <div style={{ width: "100%", height: "100vh", zIndex: 1 }}>
+        <div style={{ width: "100%", height: "50vh", zIndex: 1 }}>
         <a href="https://2gis.kg/bishkek/inside/15763234351097281/firm/70000001047984986?m=74.597365%2C42.87277%2F17.86">
-        <div style={{ position: "relative", width: "100%", height: "50vh" }}>
+        <div style={{ position: "relative", width: "100%", height: "50vh" }}> *
   <YMaps>
     <Map
       defaultState={{ center: [42.872604, 74.597629], zoom: 15 }}
-      width="100%"
+      width= "100%"
       height="60%"
       options={{
         suppressMapOpenBlock: true,
@@ -69,10 +69,7 @@ const Location = () => {
       </div>  
           
     </div>
-      </div>
-      
-     
-  
+
     
   );
 };
